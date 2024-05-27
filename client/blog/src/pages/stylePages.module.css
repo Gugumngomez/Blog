@@ -1,0 +1,14 @@
+.container {
+    background: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: 3px solid blue;
+}
