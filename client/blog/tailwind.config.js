@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      'heading': ['"Poetsen One"']
+      'heading': ['"Poetsen One"'],
+      'logoHeading': ['Allura'],
+      'nav': ['"Tenor Sans"']
     }
   },
   plugins: [],
