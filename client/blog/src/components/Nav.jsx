@@ -14,28 +14,28 @@ const Nav = () => {
         <div>
           <a href='/home' className='font-logoHeading text-7xl text-pink-950 pl-19'>Let's Blog</a>
         </div>
-        <div className='flex gap-9 items-center'>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=art'>
+        <div className='flex gap-5 items-center'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=art'>
             <h6>ART</h6>
           </Link>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=fashion'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=fashion'>
             <h6>FASHION</h6>
           </Link>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=food'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=food'>
             <h6>FOOD</h6>
           </Link>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=lifestyle'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=lifestyle'>
             <h6>LIFESTYLE</h6>
           </Link>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=technology'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=technology'>
             <h6>TECHNOLOGY</h6>
           </Link>
-          <Link className='font-nav text-xl hover:text-[#987070]' to='/?cat=photography'>
+          <Link className='font-nav text-lg hover:text-[#61677A]' to='/?cat=photography'>
             <h6>PHOTOGRAPHY</h6>
           </Link>
           <span className='cursor-pointer'>Gugu</span>
           <span className='cursor-pointer'>Logout</span>
-          <span className='cursor-pointer flex items-center justify-center bg-[#C39898] text-white text-lg rounded-full w-12 h-12 hover:bg-[#987070]'>
+          <span className='cursor-pointer flex items-center justify-center bg-[#61677A] text-white text-lg rounded-full w-12 h-12 hover:bg-[#272829]'>
             <Link to='/write' className='flex items-center justify-center w-full h-full'>
               <i className='fa-solid fa-feather-pointed'></i>
             </Link>
