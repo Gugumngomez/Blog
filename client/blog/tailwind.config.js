@@ -8,7 +8,11 @@ module.exports = {
     fontFamily:{
       'heading': ['"Poetsen One"'],
       'logoHeading': ['Allura'],
-      'nav': ['"Tenor Sans"']
+      'nav': ['"Tenor Sans"'],
+      'paragraph': ['Assistant'],
+      'paragraph1': ['Montserrat'],
+      'paragraph2': ['"Noto Sans"'],
+      'paragraph3': ['"Tenor Sans"'],
     }
   },
   plugins: [],

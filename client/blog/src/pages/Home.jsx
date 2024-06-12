@@ -42,28 +42,41 @@ const Home = () => {
     },
   ]
   return (
-    <div>
-      <CarouselMain />
+    <div className='ml-10 mr-10'>
       <div>
-        <div className='mt-10 flex flex-cols-3 gap-10'>
-          {posts.map((post) => (
-            <div key={post.id}>
-              <div>
-                <img 
-                src={post.image} 
-                alt=''
-                style={{
-                  height: '200px',
-                  width: '300px',
-                }}
+        <CarouselMain />
+      </div>
+
+      <div className='m-20'>
+        <div className='mt-12 flex flex-col gap-[150px]'>
+          {posts.map((post, index) => (
+            <div key={post.id} className={`flex gap-[100px] ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}>
+
+              <div style={{
+                flex: '2',
+                position: 'relative'
+                }}>
+
+                <img
+                  src={post.image}
+                  alt=''
+                  className='w-full max-h-[400px] object-cover relative z-10'
                 />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[380px] h-[350px] bg-[#D8D9DA]  -z-1"></div>
+                </div>
+
               </div>
-              <div>
+
+              <div className='flex flex-col justify-between'
+                style={{
+                  flex: '3',
+                }}>
                 <Link to={`/post/${post.id}`}>
-                  <h1>{post.title}</h1>
+                  <h1 className='text-4xl font-heading text-center'>{post.title}</h1>
                 </Link>
-                <p>{post.description}</p>
-                <button>Read More</button>
+                <p className='text-lg font-paragraph p-5'>{post.description}</p>
+                <button className='w-max bg-[#D8D9DA] rounded-full flex justify-center items-center mx-auto p-2 hover:bg-[#61677A] hover:text-white'>Read More</button>
               </div>
             </div>
           ))}
