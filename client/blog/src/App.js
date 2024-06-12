@@ -22,7 +22,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/single' element={<SinglePost />} />
+        <Route path='/single/:id' element={<SinglePost />} />
         <Route path='/write' element={<Write />} />
       </Routes>
       <Footer />

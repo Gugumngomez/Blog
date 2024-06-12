@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Nav = () => {
 
   const location = useLocation();
-  const showNav = ['/', '/single', '/write'].includes(location.pathname);
+  const showNav = ['/', '/single/*', '/write'].some(path => location.pathname.startsWith(path));
 
   if (!showNav) return null;
 

@@ -72,7 +72,7 @@ const Home = () => {
                 style={{
                   flex: '3',
                 }}>
-                <Link to={`/post/${post.id}`}>
+                <Link to={`/single/${post.id}`}>
                   <h1 className='text-4xl font-heading text-center'>{post.title}</h1>
                 </Link>
                 <p className='text-lg font-paragraph p-5'>{post.description}</p>

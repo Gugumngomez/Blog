@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
   const location = useLocation();
-  const showFooter = ['/', '/single', '/write'].includes(location.pathname);
+  const showFooter = ['/', '/single/*', '/write'].some(path => location.pathname.startsWith(path));
 
   if (!showFooter) return null;
 
